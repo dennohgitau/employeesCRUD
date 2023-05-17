@@ -10,7 +10,7 @@ const app = express()
 
 //middleware
 app.use(bodyParser.json())
-app.use(cors({origin: 'http://localhost:4200'}))
+app.use(cors({origin: 'https://gitauemployees.vercel.app/'}))
 app.use('/api/employees', employeeRoutes)
 app.use(errorHandler)
 
